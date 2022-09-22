@@ -27,7 +27,8 @@ http://qafoo.com/blog/016_struct_classes_in_php.html
 
 In some cases it might be necessary that additional attributes can be passed while construction and are knowingly
 ignored and not added to the DataObject. Therefore a constructor parameter `$ignoreAdditionalAttributes` has been added,
-which is set to `false` by default, but could be set to `true` in the rare cases when needed.
+which is set to `true` by default. 
 This will allow to create a DataObject of an array with more values where the additional values will be ignored and no
 exception will be thrown **during** construction. If you later try to access a property which is not existing though,
-an exception will be raised!
+an exception will be raised! On the other hand, if it's set to false it will throw an exception if you pass a value that
+doesn't match any property on the object.

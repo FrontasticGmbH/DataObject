@@ -13,7 +13,7 @@ class DataObject
      *  Defaults to false
      * @return void
      */
-    public function __construct(array $values = array(), bool $ignoreAdditionalAttributes = false)
+    public function __construct(array $values = array(), bool $ignoreAdditionalAttributes = true)
     {
         foreach ($values as $name => $value) {
             if ($ignoreAdditionalAttributes) {
