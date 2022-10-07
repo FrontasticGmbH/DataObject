@@ -1,5 +1,5 @@
 {
-    "name":         "kore/data-object",
+    "name":         "frontastic/data-object",
     "description":  "Simple base class for data objects.",
     "license": "MIT",
     "autoload": {
